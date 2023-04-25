@@ -1,0 +1,7 @@
+syntax = "proto3";
+package tranceam.voting.voting;
+
+option go_package = "github.com/TranceAM/voting/x/voting/types";
+
+// Msg defines the Msg service.
+service Msg {}

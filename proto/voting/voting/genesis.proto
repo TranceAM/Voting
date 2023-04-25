@@ -1,0 +1,12 @@
+syntax = "proto3";
+package tranceam.voting.voting;
+
+import "gogoproto/gogo.proto";
+import "voting/voting/params.proto";
+
+option go_package = "github.com/TranceAM/voting/x/voting/types";
+
+// GenesisState defines the voting module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
